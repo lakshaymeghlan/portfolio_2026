@@ -168,13 +168,11 @@ const WhatIDo = () => {
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">OpenAI (GPT-4)</div>
-                <div className="what-tags">Claude / Gemini</div>
+                <div className="what-tags">Cursor / Antigravity</div>
+                <div className="what-tags">Claude / Gemini / OpenAI</div>
                 <div className="what-tags">LangChain / MCP</div>
                 <div className="what-tags">Vector DBs</div>
                 <div className="what-tags">n8n Automation</div>
-                <div className="what-tags">DeepSeek</div>
-                <div className="what-tags">Testing: Playwright/Jest</div>
               </div>
               <div className="what-arrow"></div>
             </div>
