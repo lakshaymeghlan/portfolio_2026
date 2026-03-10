@@ -42,7 +42,7 @@ const Career = () => {
         </div>
         <div className="resume-section-link">
           <a
-            href="https://drive.google.com/file/d/1w9fy0y-s4tQuppU7qNOfQpTQQHB2hMii/view?usp=sharing"
+            href="https://drive.google.com/file/d/1BwGJU6cCem_A1nqncBhIR5pIZTTvAhxy/view?usp=sharing"
             target="_blank"
             className="resume-download-btn"
           >
