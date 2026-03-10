@@ -5,34 +5,49 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Solid Starters",
-    category: "Low-Code Platform",
-    tools: "Angular, Next.js, NestJS, MongoDB",
-    image: "/images/Solidx.png",
+    title: "Radar",
+    category: "AI Startup Intelligence Platform",
+    tools: "Next.js (App Router), Node.js, MongoDB, Tailwind CSS, RAG, Agentic AI, REST APIs",
+    description: "AI startup intelligence platform that filters ecosystem noise by aggregating emerging AI tools, research, and startup launches. Built automated data pipelines to continuously sync and structure information.",
+    image: "/images/radar.png",
+    demo: "https://radar-ai-launch.vercel.app/",
+    code: "https://github.com/lakshaymeghlan/Radar",
   },
   {
-    title: "Radix",
-    category: "E-Commerce",
-    tools: "Angular, Next.js, NestJS, CMS",
-    image: "/images/radix.png",
+    title: "OS Discovery",
+    category: "AI-Powered Open-Source Platform",
+    tools: "Next.js, Node.js, MongoDB, DeepSeek API, JWT, Microservices",
+    description: "AI-powered open-source discovery platform with real-time GitHub integration, RBAC, background sync jobs, caching, and modular microservice architecture.",
+    image: "/images/os-discovery.png", 
+    demo: "https://opn-source.netlify.app/",
+    code: "https://github.com/lakshaymeghlan/open-source",
   },
   {
-    title: "Bond Cancellation",
-    category: "Import-Export Automation",
-    tools: "Angular, Next.js, NestJS, Workflows",
-    image: "/images/bond.png",
+    title: "Predictor AI",
+    category: "AI/ML Market Prediction Dashboard",
+    tools: "Python, FastAPI, LightGBM, pandas, Next.js, ML, Real-time OHLCV",
+    description: "Full-stack AI/ML market prediction dashboard using Python and Next.js. Integrates real-time OHLCV data with model inference, caching, and backtesting.",
+    image: "/images/predictor.png",
+    demo: "https://www.youtube.com/watch?v=yt7MaFmx_Eg",
+    code: "https://github.com/lakshaymeghlan/predictior",
   },
   {
-    title: "Sapphire",
-    category: "CRM Platform",
-    tools: "AngularJS, NestJS, PostgreSQL",
-    image: "/images/sapphire.png",
+    title: "Price Scout",
+    category: "E-commerce Scorer & Comparison",
+    tools: "Node.js, Cheerio, Web Scraping, Real-time, E-commerce",
+    description: "Web scraper that compares real-time product prices across Amazon, Flipkart, and other platforms. Features brand, price, and rating filters.",
+    image: "/images/pricescout.png",
+    demo: "https://price-scout-seven.vercel.app/",
+    code: "https://github.com/lakshaymeghlan/price-scout",
   },
   {
-    title: "Mpro",
-    category: "Insurance Platform",
-    tools: "React.js, Node.js, Microservices",
-    image: "/images/Maxlife.png",
+    title: "AI Resume Analyzer",
+    category: "LLM-Powered Resume Optimizer",
+    tools: "Python, FastAPI, Next.js, LangGraph, LLM, MongoDB",
+    description: "Analyzes resumes against job descriptions, providing match scores, skill extraction, ATS optimization, and targeted improvement suggestions.",
+    image: "/images/resume.png",
+    demo: "https://www.youtube.com/watch?v=63rTAkU9mdY",
+    code: "https://github.com/lakshaymeghlan/resume-analyze",
   },
 ];
 
@@ -66,7 +81,7 @@ const Work = () => {
     <div className="work-section" id="work">
       <div className="work-container section-container">
         <h2>
-          My <span>Work</span>
+          Featured <span>Projects</span>
         </h2>
 
         <div className="carousel-wrapper">
@@ -100,22 +115,49 @@ const Work = () => {
                 <div className="carousel-slide" key={index}>
                   <div className="carousel-content">
                     <div className="carousel-info">
-                      <div className="carousel-number">
-                        <h3>0{index + 1}</h3>
+                      <div className="carousel-header">
+                        <div className="carousel-number">
+                          <h3>0{index + 1}</h3>
+                        </div>
+                        <div className="project-title-area">
+                          <h4>{project.title}</h4>
+                          <p className="carousel-category">
+                            {project.category}
+                          </p>
+                        </div>
                       </div>
+
                       <div className="carousel-details">
-                        <h4>{project.title}</h4>
-                        <p className="carousel-category">
-                          {project.category}
-                        </p>
+                        <p className="project-description">{project.description}</p>
+                        
                         <div className="carousel-tools">
-                          <span className="tools-label">Tools & Features</span>
+                          <span className="tools-label">Tech Stack</span>
                           <p>{project.tools}</p>
+                        </div>
+
+                        <div className="project-actions">
+                          <a 
+                            href={project.demo} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="btn-project btn-demo"
+                          >
+                            Live Demo
+                          </a>
+                          <a 
+                            href={project.code} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="btn-project btn-code"
+                          >
+                            View Code
+                          </a>
                         </div>
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
                       <WorkImage image={project.image} alt={project.title} />
+                      <div className="image-overlay"></div>
                     </div>
                   </div>
                 </div>

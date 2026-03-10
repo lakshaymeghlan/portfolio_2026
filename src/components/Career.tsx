@@ -15,45 +15,39 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Ikshan</h5>
+                <h4>B.Tech in Computer Science</h4>
+                <h5>Manav Rachna International Institute</h5>
               </div>
-              <h3>2020</h3>
+              <h3>2018-2022</h3>
             </div>
             <p>
-              Built 6+ complete applications using React.js. Integrated backend
-              authentication using Node.js & MongoDB. Created responsive UI/UX
-              and designed wireframes using Figma.
+              Focused on Data Structures, Algorithms, Machine Learning, and Web Development.
+              Graduated with a CGPA of 7.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Senior Full Stack Developer</h4>
-                <h5>Monocept (Max Life Insurance)</h5>
+                <h4>Software Engineer (Full Stack / Backend)</h4>
+                <h5>TechChefz</h5>
               </div>
-              <h3>2021</h3>
+              <h3>2022-NOW</h3>
             </div>
-            <p>
-              Led two development teams on Mpro, a large-scale insurance
-              operations platform. Developed multiple modules using React.js &
-              migrated critical functionalities to Node.js microservices.
-            </p>
+            <div className="career-details-list">
+  <p>
+    Architected and optimized scalable backend services using Node.js, NestJS, and TypeScript, reducing API latency by 35%. Built secure authentication and authorization systems with JWT, OAuth2, and RBAC while integrating third-party platforms such as Razorpay, Google DV360, Magento, and Strapi to automate workflows and improve payment success rates by 25%. Improved system performance through Redis caching, BullMQ queues, and background processing, increasing efficiency by 30%. Optimized MongoDB and PostgreSQL queries for faster data retrieval and reliability, implemented CI/CD pipelines with GitHub Actions and Docker to accelerate deployments, and developed analytics dashboards using Google DV360 APIs. Collaborated closely with React.js and Next.js teams to deliver scalable full-stack solutions for enterprise clients including Club Mahindra and Rocksport.
+  </p>
+</div>
           </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Logic Loop</h5>
-              </div>
-              <h3>NOW</h3>
-            </div>
-            <p>
-              Building Solid, a proprietary low-code platform using Angular,
-              Next.js & NestJS. Delivering production-ready CMS-based projects
-              including e-commerce, CRM, and import-export automation systems.
-            </p>
-          </div>
+        </div>
+        <div className="resume-section-link">
+          <a
+            href="https://drive.google.com/file/d/1w9fy0y-s4tQuppU7qNOfQpTQQHB2hMii/view?usp=sharing"
+            target="_blank"
+            className="resume-download-btn"
+          >
+            Download Full Resume
+          </a>
         </div>
       </div>
     </div>

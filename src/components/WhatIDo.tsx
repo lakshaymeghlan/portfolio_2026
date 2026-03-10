@@ -7,23 +7,20 @@ const WhatIDo = () => {
   const setRef = (el: HTMLDivElement | null, index: number) => {
     containerRef.current[index] = el;
   };
+
   useEffect(() => {
     if (ScrollTrigger.isTouch) {
       containerRef.current.forEach((container) => {
         if (container) {
           container.classList.remove("what-noTouch");
-          container.addEventListener("click", () => handleClick(container));
+          const handler = () => handleClick(container);
+          container.addEventListener("click", handler);
+          return () => container.removeEventListener("click", handler);
         }
       });
     }
-    return () => {
-      containerRef.current.forEach((container) => {
-        if (container) {
-          container.removeEventListener("click", () => handleClick(container));
-        }
-      });
-    };
   }, []);
+
   return (
     <div className="whatIDO">
       <div className="what-box">
@@ -88,21 +85,20 @@ const WhatIDo = () => {
 
             <div className="what-content-in">
               <h3>FRONTEND</h3>
-              <h4>Building Interactive UIs</h4>
+              <h4>Modern UI/UX & Web Apps</h4>
               <p>
-                Crafting performant, responsive interfaces with modern frameworks.
-                From SPAs to micro-frontends, I deliver pixel-perfect experiences.
+                Developing interactive, high-performance user interfaces using
+                modern frameworks and responsive design principles.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">React.js</div>
-                <div className="what-tags">Angular</div>
                 <div className="what-tags">Next.js</div>
                 <div className="what-tags">TypeScript</div>
                 <div className="what-tags">JavaScript</div>
-                <div className="what-tags">Material UI</div>
-                <div className="what-tags">HTML5</div>
-                <div className="what-tags">CSS3</div>
+                <div className="what-tags">Bootstrap</div>
+                <div className="what-tags">Tailwind CSS</div>
+                <div className="what-tags">HTML5 / CSS3</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -126,22 +122,59 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>BACKEND</h3>
-              <h4>Scalable Server Architecture</h4>
+              <h3>BACKEND & SYSTEMS</h3>
+              <h4>Scalable Architecture & Cloud</h4>
               <p>
-                Designing robust APIs and microservices. From CMS platforms to
-                complex business logic, I build backends that scale.
+                Building robust microservices, secure APIs, and automated
+                CI/CD pipelines for production-ready enterprise applications.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">Node.js</div>
                 <div className="what-tags">NestJS</div>
-                <div className="what-tags">Express.js</div>
-                <div className="what-tags">MongoDB</div>
-                <div className="what-tags">PostgreSQL</div>
-                <div className="what-tags">REST APIs</div>
-                <div className="what-tags">Microservices</div>
                 <div className="what-tags">Python</div>
+                <div className="what-tags">Redis / BullMQ</div>
+                <div className="what-tags">MongoDB / Postgre</div>
+                <div className="what-tags">Azure / Docker / CI-CD</div>
+                <div className="what-tags">OpenAPI / JWT</div>
+              </div>
+              <div className="what-arrow"></div>
+            </div>
+          </div>
+          <div
+            className="what-content what-noTouch"
+            ref={(el) => setRef(el, 2)}
+          >
+            <div className="what-border1">
+              <svg height="100%">
+                <line
+                  x1="0"
+                  y1="100%"
+                  x2="100%"
+                  y2="100%"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeDasharray="6,6"
+                />
+              </svg>
+            </div>
+            <div className="what-corner"></div>
+            <div className="what-content-in">
+              <h3>AI & EMERGING TECH</h3>
+              <h4>AI Integration & Automation</h4>
+              <p>
+                Leveraging LLMs, Vector Databases, and AI Agents to build
+                intelligent systems and automate complex business workflows.
+              </p>
+              <h5>Skillset & tools</h5>
+              <div className="what-content-flex">
+                <div className="what-tags">OpenAI (GPT-4)</div>
+                <div className="what-tags">Claude / Gemini</div>
+                <div className="what-tags">LangChain / MCP</div>
+                <div className="what-tags">Vector DBs</div>
+                <div className="what-tags">n8n Automation</div>
+                <div className="what-tags">DeepSeek</div>
+                <div className="what-tags">Testing: Playwright/Jest</div>
               </div>
               <div className="what-arrow"></div>
             </div>

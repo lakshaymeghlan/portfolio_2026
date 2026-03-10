@@ -131,7 +131,21 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .techstack h2 {
-    font-size: 40px;
+  .techstack-header h2 {
+    font-size: 32px;
+    letter-spacing: 6px;
+  }
+  
+  .tech-dock {
+    padding: 8px 16px;
+    gap: 8px;
+    max-width: 90vw;
+    overflow-x: auto;
+  }
+  
+  .dock-item {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
   }
 }

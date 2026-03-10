@@ -44,11 +44,18 @@
   margin-bottom: 50px;
 }
 
-.career-info-box p {
+.career-info-box p,
+.career-details-list {
   width: 40%;
   font-size: 18px;
   font-weight: 300;
   margin: 0;
+}
+
+.career-details-list p {
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
 .career-info-in {
@@ -171,8 +178,13 @@
     gap: 20px;
   }
 
-  .career-info-box p {
+  .career-info-box p,
+  .career-details-list {
     width: 45%;
+  }
+
+  .career-details-list p {
+    font-size: 13px;
   }
 }
 
@@ -193,7 +205,8 @@
   }
 
   .career-info-in,
-  .career-info-box p {
+  .career-info-box p,
+  .career-details-list {
     width: 100%;
     padding-left: 10%;
     box-sizing: border-box;
@@ -241,4 +254,27 @@
     place-items: inherit;
     justify-content: left;
   }
+}
+
+.resume-section-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.resume-download-btn {
+  padding: 15px 40px;
+  background-color: var(--accentColor);
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 50px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--accentColor);
+}
+
+.resume-download-btn:hover {
+  background-color: transparent;
+  color: var(--accentColor);
 }
