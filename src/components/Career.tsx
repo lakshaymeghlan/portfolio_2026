@@ -34,15 +34,15 @@ const Career = () => {
               <h3>2022-NOW</h3>
             </div>
             <div className="career-details-list">
-  <p>
-    Architected and optimized scalable backend services using Node.js, NestJS, and TypeScript, reducing API latency by 35%. Built secure authentication and authorization systems with JWT, OAuth2, and RBAC while integrating third-party platforms such as Razorpay, Google DV360, Magento, and Strapi to automate workflows and improve payment success rates by 25%. Improved system performance through Redis caching, BullMQ queues, and background processing, increasing efficiency by 30%. Optimized MongoDB and PostgreSQL queries for faster data retrieval and reliability, implemented CI/CD pipelines with GitHub Actions and Docker to accelerate deployments, and developed analytics dashboards using Google DV360 APIs. Collaborated closely with React.js and Next.js teams to deliver scalable full-stack solutions for enterprise clients including Club Mahindra and Rocksport.
-  </p>
-</div>
+              <p>
+                Architected and optimized scalable backend services using Node.js, NestJS, and TypeScript, reducing API latency by 35%. Built secure authentication and authorization systems with JWT, OAuth2, and RBAC while integrating third-party platforms such as Razorpay, Google DV360, Magento, and Strapi to automate workflows and improve payment success rates by 25%. Improved system performance through Redis caching, BullMQ queues, and background processing, increasing efficiency by 30%. Optimized MongoDB and PostgreSQL queries for faster data retrieval and reliability, implemented CI/CD pipelines with GitHub Actions and Docker to accelerate deployments, and developed analytics dashboards using Google DV360 APIs. Collaborated closely with React.js and Next.js teams to deliver scalable full-stack solutions for enterprise clients including Club Mahindra and Rocksport.
+              </p>
+            </div>
           </div>
         </div>
         <div className="resume-section-link">
           <a
-            href="https://drive.google.com/file/d/1aWMw00TVCArQ1IfMRoKFn2FWjL5X4RVj/view?usp=sharing"
+            href="https://drive.google.com/file/d/1DqBwAAWt6WasTd16iBGj9ccUepDmcBaQ/view?usp=sharing"
             target="_blank"
             className="resume-download-btn"
           >
